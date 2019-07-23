@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   	
+    <h1 align="center" style="font-size:60px;">DeepRiff</h1>
+    
+
+    <style>
+    div.container {
+      margin-left: 0 auto;
+  	  margin-right: 0 auto;
+    }
+
+    div {
+  		background-color: lightgrey;
+	}
+
+    img {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+
+    p {
+      text-align:center;
+      word-wrap: break-word;
+      margin-top: 20px;
+  	  margin-bottom: 20px;
+      margin-right: 80px;
+      margin-left: 80px;
+    }
+   
+    .custom-btn {
+       max-width: 100%;
+       padding-left:25px;
+       padding-right:25px;
+    }
+
+    img {
+   		padding:2px;
+   		border:2px solid #021a40;
+	}
+
+
+    </style>
+</head>
+
+<body align="center">
+
+	<!--<br> </br>
+		<p align="center">
+		Looking for new musical ideas? Listen to the one or more of the songs below, make your selection from the dropdown list,
+		<br> and DeepRiff will generate a new composition in the same style, along with accompanying sheet music.
+		<br> Selections labelled "Advanced" on the dropdown list produce music suitable for more advanced players, while selections
+		<br> labelled "Beginner" produce music more suitable for beginners. After clicking "Submit," please allow
+		<br> a few minutes for DeepRiff to compose (for most styles, this takes three - five minutes, but up to to ten for Memphis Slim's "Cow Cow Blues").   
+		</p>
+	<br> </br> -->
+        
+<!--
+<div class="col-lg-6 some__class">
+    <p> Looking for new musical ideas? Listen to the one or more of the songs below, make your selection from the dropdown list, and DeepRiff will generate a new composition in the same style, along with accompanying sheet music.
+    Usually this takes three-five minutes, but in some cases can take as much as ten. 
+     </p>
+</div> -->
+
+    <p align="center">
+    Looking for new musical ideas? Listen to the one or more of the songs below, make your selection from the dropdown list, and DeepRiff will generate a new composition in the same style, along with accompanying sheet music. Usually this takes two-five minutes (but in some cases as much as ten). 
+    </p>
+	
+        
+
+	<img src="/static/player_piano.jpg" alt="player piano" width="400" height="420" align="center" border="5" class="rounded mx-auto d-block">
+
+	<br> </br>
+
+	<br> </br>
+
+	<h1 align="center">Compose in the Style of ... </h1>
+
+
+	<form action='/downloads', method='POST' align="center">
+
+	  <select name="song_name" id="song_name" class="browser-default custom-select" style="width:auto;">
+	    <option selected="selected" value = ''>Select Song/Artist</option>
+	    <option value="oscar_peterson">Oscar Peterson (Advanced)</option>
+	    <option value="theolonious_monk">Theolonious Monk (Advanced)</option>
+	    <option value="bach_goldbergVariations">Bach, Goldberg Variations (Advanced)</option>
+	    <option value="joplin_sunflowerDrag">Scott Joplin, Sunflower Slow Drag (Beginner)</option>
+	    <option value="memphisSlim_cowCowBlues">Memphis Slim, Cow Cow Blues (Beginner)</option>
+	    <option value="joplin_entertainer">Scott Joplin, The Entertainer (Beginner)</option>
+	  </select> 
+	  <button type="submit" class=btn-primary>Compose!</button>
+
+	</form>
+
+	<br> </br>
+
+	<br> </br>
+
+	<div class="container" align="center" style="border:solid">
+		<br> </br>
+	 	<img src="/static/oscar_peterson.jpeg" height="120" width="120" align="center">
+	    <p align="center"><font size="1">Oscar Peterson, Blues Improvisation</font></p>
+
+		<audio controls align="center">
+  			<source src="/static/oscar_peterson.mp3" type="audio/mpeg" align="center">
+		</audio>
+		<br> </br>
+	</div>
+
+	<br> </br>
+
+	<div class="container" align="center" style="border:solid">
+		<br> </br>
+	 	<img src="/static/theolonious_monk.jpeg" height="120" width="120">
+	    <p><font size="1">Theolonious Monk, Blue Monk</font></p>
+
+		<audio controls>
+  			<source src="/static/theoloniousMonk_blueMonk.mp3" type="audio/mpeg">
+		</audio>
+		<br> </br>
+	</div>
+
+	<br> </br>
+
+	<div class="container" align="center" style="border:solid">
+		<br> </br>
+	 	<img src="/static/bach.jpeg" height="120" width="120" />
+	    <p><font size="1">Bach, Goldberg Variations</font></p>
+	    
+	    <audio controls>
+  			<source src="/static/bach_goldbergVariations6.mp3" type="audio/mpeg">
+		</audio>
+		<br> </br>
+	</div>
+
+	<br> </br>
+
+	<div class="container" align="center" style="border:solid">
+		<br> </br>
+	 	<img src="/static/scott_joplin.jpg" height="120" width="120" />
+	    <p><font size="1">Scott Joplin, Slow Sunflower Drag</font></p>
+
+		<audio controls>
+  			<source src="/static/scottJoplin_slowSunflowerDrag.mp3" type="audio/mpeg">
+		</audio>
+		<br> </br>
+	</div>
+
+	<br> </br>
+
+	<div class="container" align="center" style="border:solid">
+		<br> </br>
+	    <img src="/static/memphis_slim2.jpg" height="120" width="120" />
+	    <p><font size="1">Memphis Slim, Cow Cow Blues</font></p>
+
+	    <audio controls>
+  			<source src="/static/memphisSlim_CowCowBlues_section1.mp3" type="audio/mpeg">
+	  	</audio>
+	  	<br> </br>
+	</div>
+
+	<br> </br>
+
+	<div class="container" align="center" style="border:solid">
+		<br> </br>
+	  	<img src="/static/scott_joplin2.jpeg" height="120" width="120" />
+	  	<p><font size="1">Scott Joplin, The Entertainer</font></p>
+	
+		<audio controls>
+  			<source src="/static/scottJoplin_theEntertainer.mp3" type="audio/mpeg">
+		</audio>
+		<br> </br>
+	</div>
+
+	<br> </br>
+
+</body>
+</html>
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <h1 align="center">DeepRiff</h1>
+</head>
+<body>
+<img align="center" src="/static/player_piano.jpg" alt="player piano" style="width:48px;height:48px;>
+
+ <h2 align="center">Compose in the style of ... (this may take a few minutes) </h2> 
+
+  <form action='/downloads', method='POST' align="center">
+  <select name="song_name" id="song_name" class="selectpicker form-control">
+    <option selected="selected" value = ''>Select Song/Artist</option>
+    <option value="joplin_sunflowerDrag">Scott Joplin, Sunflower Slow Drag</option>
+    <option value="joplin_entertainer">Scott Joplin, The Entertainer</option>
+    <option value="memphisSlim_cowCowBlues">Memphis Slim, Cow Cow Blues</option>
+  </select> 
+
+<button type="submit">Submit</button>
+</body>
+</html> 
+-->
