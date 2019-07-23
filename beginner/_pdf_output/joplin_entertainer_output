@@ -1,0 +1,326 @@
+\version "2.18" 
+color = #(define-music-function (parser location color) (string?) #{
+        \once \override NoteHead #'color = #(x11-color color)
+        \once \override Stem #'color = #(x11-color color)
+        \once \override Rest #'color = #(x11-color color)
+        \once \override Beam #'color = #(x11-color color)
+     #})
+    
+\header { } 
+\score  { 
+ \new Voice { \new Voice { g 4  
+                < ees'  fis'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < c'  e'  > 4   
+                < d'  f'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < b'  d'  > 4   
+                < f'  g'  b'  > 4   
+                < d'  f'  > 4   
+                < c'  e'  > 4   
+                c 4  
+                < c'  e'  g'  > 4   
+                < c'  e'  g'  > 4   
+                < c'  > 4   
+                < d'  > 4   
+                < e'  > 4   
+                < c'  > 4   
+                < c'  > 4   
+                < d'  > 4   
+                < c'  e'  > 4   
+                g 4  
+                < e'  > 4   
+                < bes'  > 4   
+                < c'  > 4   
+                < d'  > 4   
+                < c'  e'  g'  > 4   
+                < c'  > 4   
+                < e'  > 4   
+                < a'  > 4   
+                < c'  > 4   
+                < d'  > 4   
+                < f'  a'  c'  > 4   
+                < e'  > 4   
+                < gis'  > 4   
+                < c'  > 4   
+                < d'  > 4   
+                < gis'  c'  > 4   
+                f' 4  
+                < c'  > 4   
+                < g'  > 4   
+                < e'  g'  > 4   
+                < c'  e'  > 4   
+                < d'  f'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < b'  d'  > 4   
+                < d'  f'  > 4   
+                < b'  d'  > 4   
+                < c'  e'  > 4   
+                < g'  c'  > 4   
+                < g'  > 4   
+                < c'  > 4   
+                < c'  e'  > 4   
+                < d'  f'  > 4   
+                < ees'  fis'  > 4   
+                < c'  > 4   
+                < e'  g'  > 4   
+                < a'  c'  e'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < c'  e'  > 4   
+                < d'  f'  > 4   
+                < c'  e'  g'  > 4   
+                < ees'  fis'  > 4   
+                < e'  g'  > 4   
+                c 4  
+                < a'  > 4   
+                < e'  a'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                e'' 4  
+                < c'  e'  g'  > 4   
+                c'' 4  
+                g' 4  
+                a' 4  
+                f, 4  
+                b' 4  
+                < a'  c'  > 4   
+                f' 4  
+                d'' 4  
+                < e'  f'  > 4   
+                d'' 4  
+                < f'  gis'  c'  > 4   
+                d'' 4  
+                g' 4  
+                e 4  
+                e'' 4  
+                f'' 4  
+                < c'  e'  > 4   
+                g'' 4  
+                g, 4  
+                a'' 4  
+                g'' 4  
+                e'' 4  
+                < c'  e'  g'  > 4   
+                f'' 4  
+                c 4  
+                e'' 4  
+                < g'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  a'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < c'  e'  > 4   
+                < c'  e'  g'  > 4   
+                < d'  f'  > 4   
+                < ees'  fis'  > 4   
+                < e'  g'  > 4   
+                c 4  
+                < e'  a'  > 4   
+                < g'  c'  > 4   
+                < e'  g'  > 4   
+                g'' 4  
+                e 4  
+                g'' 4  
+                < ees'  a'  > 4   
+                bes'' 4  
+                d 4  
+                < g'  b'  d'  > 4   
+                < b'  d'  > 4   
+                g'' 4  
+                < g'  b'  d'  > 4   
+                b'' 4  
+                c'' 4  
+                fis'' 4  
+                d 4  
+                a'' 4  
+                < fis'  a'  c'  d'  > 4   
+                d'' 4  
+                < g'  b'  > 4   
+                < g'  b'  d'  > 4   
+                < f'  > 4   
+                < e'  > 4   
+                < c'  e'  > 4   
+                < d'  > 4   
+                < d'  f'  > 4   
+                < ees'  fis'  > 4   
+                < e'  g'  > 4   
+                < c'  > 4   
+                < e'  a'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < c'  e'  > 4   
+                < d'  f'  > 4   
+                < g'  c'  > 4   
+                e' 4  
+                < ees'  fis'  > 4   
+                < e'  g'  > 4   
+                c 4  
+                < e'  g'  a'  c'  > 4   
+                < g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                e'' 4  
+                < c'  e'  g'  > 4   
+                c'' 4  
+                g' 4  
+                a' 4  
+                f, 4  
+                b' 4  
+                < f'  a'  c'  > 4   
+                d''' 4  
+                f 4  
+                e'' 4  
+                d''' 4  
+                < f'  gis'  c'  > 4   
+                d''' 4  
+                c'' 4  
+                e 4  
+                < c'  e'  g'  > 4   
+                c 4  
+                g' 4  
+                < fis'  bes'  c'  > 4   
+                < g'  bes'  c'  > 4   
+                g' 4  
+                c'' 4  
+                < f'  a'  c'  > 4   
+                a'' 4  
+                < f'  a'  c'  > 4   
+                c''' 4  
+                < c'  ees'  fis'  a'  > 4   
+                a' 4  
+                < c'  ees'  fis'  a'  > 4   
+                c''' 4  
+                a'' 4  
+                < c'  e'  g'  > 4   
+                c'' 4  
+                < c'  e'  > 4   
+                < e'  g'  > 4   
+                g'' 4  
+                < c'  e'  g'  > 4   
+                e''' 4  
+                < c'  > 4   
+                < c'  e'  g'  > 4   
+                g' 4  
+                a'' 4  
+                fis'' 4  
+                < c'  d'  > 4   
+                < a'  c'  d'  > 4   
+                fis' 4  
+                < e'  f'  g'  > 4   
+                < g'  b'  > 4   
+                < d'  f'  > 4   
+                < g'  b'  > 4   
+                < c'  e'  > 4   
+                < c'  > 4   
+                < g'  > 4   
+                < e'  > 4   
+                < c'  e'  > 4   
+                < d'  > 4   
+                < d'  f'  > 4   
+                < ees'  fis'  > 4   
+                < c'  > 4   
+                < e'  g'  > 4   
+                < a'  c'  e'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < c'  e'  > 4   
+                < d'  f'  > 4   
+                < c'  e'  g'  > 4   
+                < ees'  fis'  > 4   
+                < e'  g'  > 4   
+                c 4  
+                < a'  > 4   
+                < e'  a'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                e''' 4  
+                < c'  e'  g'  > 4   
+                c''' 4  
+                g'' 4  
+                a'' 4  
+                f, 4  
+                b'' 4  
+                < a'  c'  > 4   
+                f' 4  
+                d''' 4  
+                < e'  f'  > 4   
+                d''' 4  
+                < f'  gis'  c'  > 4   
+                d''' 4  
+                g'' 4  
+                e 4  
+                e''' 4  
+                f''' 4  
+                < c'  e'  > 4   
+                g''' 4  
+                g, 4  
+                a''' 4  
+                g''' 4  
+                e''' 4  
+                < c'  e'  g'  > 4   
+                f''' 4  
+                c 4  
+                e''' 4  
+                < g'  > 4   
+                < c'  e'  g'  > 4   
+                < e'  a'  > 4   
+                < e'  g'  > 4   
+                g, 4  
+                < c'  e'  > 4   
+                < c'  e'  g'  > 4   
+                < d'  f'  > 4   
+                < ees'  fis'  > 4   
+                < e'  g'  > 4   
+                c 4  
+                < e'  a'  > 4   
+                < g'  c'  > 4   
+                < e'  g'  > 4   
+                g''' 4  
+                e 4  
+                g''' 4  
+                < ees'  a'  > 4   
+                bes''' 4  
+                d 4  
+                < g'  b'  d'  > 4   
+                < b'  d'  > 4   
+                g''' 4  
+                < g'  b'  d'  > 4   
+                b''' 4  
+                c''' 4  
+                fis''' 4  
+                d 4  
+                a''' 4  
+                < fis'  a'  c'  d'  > 4   
+                d''' 4  
+                < g'  b'  > 4   
+                < g'  b'  d'  > 4   
+                < f'  > 4   
+                < e'  > 4   
+                < c'  e'  > 4   
+                 } 
+               
+ 
+           } 
+         
+ 
+  } 
+ 
+\paper { }
+\layout {
+  \context {
+    \RemoveEmptyStaffContext
+    \override VerticalAxisGroup #'remove-first = ##t
+  }
+ }
+ 
