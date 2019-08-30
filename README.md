@@ -1,4 +1,4 @@
-## Introducing DeepRiff
+## DeepRiff Overview
 
 DeepRiff (http://deepriff.com/) is an AI music idea generator of jazz, blues, ragtime, and classical music, which I built 
 during my time as a fellow in the Insight fellowship program. The purpose is to generate new musical ideas,
